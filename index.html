@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>I&M GIYIM</title>
+
+<!-- ICON -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  font-family: "Times New Roman", serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 70px;
+  border-bottom: 1px solid #c9a24d;
+}
+
+/* LOGO */
+.logo {
+  color: #c9a24d;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 35px;
+}
+
+.menu a {
+  position: relative;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+
+/* ALTIN ÇİZGİ */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #c9a24d, #fff1b0, #c9a24d);
+  transition: 0.4s;
+}
+
+.menu a:hover {
+  color: #c9a24d;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* SEPET */
+.cart {
+  margin-left: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart i {
+  color: #c9a24d;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.cart:hover i {
+  text-shadow: 0 0 15px rgba(201,162,77,0.8);
+}
+
+/* SEPET SAYISI */
+.cart span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #c9a24d;
+  color: black;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-family: Arial;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">I&M COLLECTION GIYIM</div>
+
+  <ul class="menu">
+    <li><a href="#">ANA SAYFA</a></li>
+    <li><a href="#">KOLEKSİYON</a></li>
+    <li><a href="#">ERKEK</a></li>
+    <li><a href="#">KADIN</a></li>
+    <li><a href="#">İLETİŞİM</a></li>
+
+    <li class="cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span>2</span>
+    </li>
+  </ul>
+</nav>
+
+</body>
+</html>
+
